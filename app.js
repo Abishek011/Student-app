@@ -71,7 +71,7 @@ app.post("/addStudent", function (req, res) {
     }
     data.student.push(temporaryData);
     fs.writeFileSync('./jsonFiles/data.json', JSON.stringify(data));
-    res.send("Data added..");
+    res.status(200).end("Data added..");
 });
 
 app.put('/updateStudent/:name', (req, res) => {
