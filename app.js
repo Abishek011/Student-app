@@ -67,7 +67,7 @@ app.post("/addStudent", function (req, res) {
         id: req.body.id,
         name: req.body.name,
         rolln: req.body.roll,
-        dept: req.body.dept,
+        dept: req.body.dept
     }
     data.student.push(temporaryData);
     fs.writeFileSync('./jsonFiles/data.json', JSON.stringify(data));
