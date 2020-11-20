@@ -1,5 +1,5 @@
 var exp = require('express');
-var bodyParser = require('body-Parser');
+var bodyParser = require('body-parser');
 var fs = require('fs');
 var app = exp();
 
