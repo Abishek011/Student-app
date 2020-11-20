@@ -8,9 +8,6 @@ app.set('view engine', 'ejs');
 var port = process.env.PORT || 3000;
 var hostName = 'localhost';
 
-app.listen(port, hostName, () => {
-    console.log(`Server is running at ${port} at host ${hostName}`);
-});
 //variable to store student data in json file
 let data = {
     student: [] // This is the array for storing Student data
@@ -128,5 +125,8 @@ app.delete('/removeStudent/:name', (req, res) => {
     res.status(200).json({ message: ` The record of student ${studentName} is deleted` });
     }
 });
+
+//Listeing to port PORT or 3000
+app.listen(port);
 
 
