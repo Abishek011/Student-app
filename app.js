@@ -56,7 +56,7 @@ app.get("/student/:name", (req, res) => {
 });
 
 app.get("/", function (req, res) {
-    console.log("get - call");
+    console.log("Home page");
     res.render("index");
 });
 
