@@ -66,7 +66,7 @@ app.post("/addStudent", function (req, res) {
     temporaryData = {
         id: req.body.id,
         name: req.body.name,
-        rolln: req.body.roll,
+        rollno: req.body.roll,
         dept: req.body.dept
     }
     data.student.push(temporaryData);
